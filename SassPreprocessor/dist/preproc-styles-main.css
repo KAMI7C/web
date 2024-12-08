@@ -1,0 +1,1192 @@
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 600;
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Plaster";
+  font-weight: normal;
+  src: url("../fonts/Plaster-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pangolin";
+  font-weight: normal;
+  src: url("../fonts/Pangolin-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pirata One";
+  font-weight: normal;
+  src: url("../fonts/PirataOne-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.block1 {
+  width: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  background: radial-gradient(circle at 35% 26%, #2866AB, #12437A, #102945);
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 12px;
+}
+
+.intro__title {
+  color: rgba(255, 255, 255, 0.8);
+  font: 400 21.04vw "Plaster";
+  text-align: left;
+  line-height: 0.7;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-left: -1.2vw;
+  margin-top: 88px;
+  margin-bottom: 30px;
+  grid-column: 1/-1;
+}
+
+.intro__content {
+  padding-left: 1.67vw;
+  padding-right: 5.416vw;
+  margin-bottom: 37px;
+}
+
+.intro__subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font: 400 3.33vw "Pangolin";
+  line-height: 3.403vw;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: lowercase;
+  margin-bottom: 19px;
+}
+
+.intro__image {
+  height: 26.042vw;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  align-self: end;
+}
+
+.intro__bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.intro__features {
+  display: flex;
+  flex-wrap: no-wrap;
+  margin-bottom: 20px;
+}
+
+.intro__icon {
+  margin-right: 10px;
+}
+
+.intro__feature {
+  display: flex;
+  border-radius: 20px;
+  background: rgba(217, 217, 217, 0.14);
+  padding: 16px 24px 16px 22px;
+  margin-right: 17px;
+  align-items: center;
+}
+
+.intro__feature-text {
+  color: rgba(255, 255, 255, 0.8);
+  font: 300 18px "Open Sans", sans-serif;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: lowercase;
+  overflow-wrap: break-word;
+}
+
+.intro__rating-img {
+  width: 18.125vw;
+  margin-bottom: 2px;
+}
+
+.intro__rating-text {
+  color: rgba(255, 255, 255, 0.79);
+  font: 300 24px "Open Sans";
+  line-height: 1;
+  margin-left: 5px;
+  text-align: left;
+}
+
+.statistics {
+  padding-top: 33px;
+  padding-bottom: 71px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.statistics__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.85vw;
+}
+
+.statistics__numbers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 57px;
+  margin-right: 8px;
+  margin-left: 4px;
+}
+
+.statistics__number {
+  color: #131313;
+  font: 400 11vw "Pirata One";
+  line-height: 10.3465vw;
+  letter-spacing: 0.02em;
+  text-align: right;
+  text-transform: lowercase;
+}
+
+.statistics__number-text {
+  color: black;
+  font: 400 24px "Pangolin";
+  line-height: 1.3em;
+  text-align: left;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+}
+
+.statistics__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.statistics__title {
+  color: black;
+  font: 600 20px "Open Sans";
+  line-height: 28.05px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.statistics__text {
+  color: rgba(0, 0, 0, 0.59);
+  font: 600 16px "Open Sans";
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.statistics__info-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statistics__image-bg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-room {
+  border: 1.09px solid rgba(0, 0, 0, 0.22);
+  border-radius: 31.73px;
+  height: 24.24vw;
+}
+
+.title-room {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.text-room {
+  margin-bottom: 25px;
+  width: 100%;
+  margin-left: 0px;
+}
+
+.img-home {
+  width: 33.1vw;
+  object-fit: contain;
+  padding-bottom: 4px;
+}
+
+.title-home {
+  margin-bottom: 3px;
+}
+
+.advantages-teachers {
+  background-image: url("../images/mainpage/bg-mid-main.svg");
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 29px;
+}
+
+.advantages-teachers__title {
+  color: rgba(255, 255, 255, 0.8);
+  font: 600 32px "Open Sans";
+  line-height: 44px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.advantages__number {
+  color: rgba(255, 255, 255, 0.8);
+  font: 400 80px "Pirata One";
+  line-height: 80.99px;
+  letter-spacing: 0.02em;
+  text-align: right;
+  text-transform: lowercase;
+}
+
+.advantages__heading {
+  color: rgba(255, 255, 255, 0.8);
+  font: 600 16px "Open Sans";
+  line-height: 25.58px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.advantages__subheading {
+  color: rgba(255, 255, 255, 0.8);
+  font: 300 15px "Open Sans";
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: lowercase;
+}
+
+.advantages__text {
+  color: rgba(255, 255, 255, 0.68);
+  font: 300 15px "Open Sans";
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: lowercase;
+  grid-column: span 2;
+}
+
+.advantages-teachers__book {
+  position: absolute;
+  top: 285px;
+  left: 199px;
+  width: 20.2vw;
+}
+
+.advantages-teachers__boy {
+  position: absolute;
+  top: 308px;
+  right: 96px;
+  width: 35.28vw;
+}
+
+.advantages-teachers-blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 211px;
+}
+
+.advantages__block {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: auto 1fr;
+  column-gap: 19px;
+  row-gap: 5px;
+  grid-template-rows: min-content min-content;
+  height: fit-content;
+  padding: 5px 30px 21px 26px;
+}
+
+.advantages__block1 {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 0px 70px 0px 70px;
+  backdrop-filter: blur(4px);
+  background: rgba(83, 123, 166, 0.63);
+}
+
+.advantages__block2 {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 70px 0px 70px 0px;
+  backdrop-filter: blur(4px);
+  background: rgba(83, 123, 166, 0.63);
+}
+
+.advantages__heading-and-subheading {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.teachers__heading {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25.58px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.teachers__teacher {
+  box-sizing: border-box;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teachers__teacher-name {
+  text-align: center;
+  color: white;
+  font-family: "Pirata One";
+  font-size: 24px;
+  margin-bottom: 3px;
+  font-weight: 400;
+  line-height: 25.58px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.teachers__teacher-text {
+  color: #eeedf8;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: lowercase;
+  margin-bottom: 11px;
+}
+
+.teachers__teacher-imgblock {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(217, 217, 217, 0.43);
+  border-radius: 50%;
+  width: 15.694vw;
+  height: 15.416vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 13px;
+}
+
+.teachers__teacher-imgblock_second {
+  background: rgba(255, 255, 255, 0.56);
+}
+
+.teachers__teacher-imgblock_third {
+  background: rgba(144, 143, 175, 0.43);
+}
+
+.teachers__teacher-image {
+  width: 100%;
+  transform: scale(1.44);
+  height: auto;
+  object-fit: cover;
+  padding-top: 27px;
+}
+
+.teachers__block-nav {
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 70px;
+  backdrop-filter: blur(4px);
+  background: rgba(83, 123, 166, 0.63);
+  padding: 12px 27px 10px 33px;
+}
+
+.teachers__dots {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+}
+
+.teachers__dot {
+  background: #eaeaea;
+  width: 13px;
+  opacity: 0.3;
+  height: 13px;
+  border-radius: 50%;
+  display: flex;
+}
+
+.active {
+  opacity: 1;
+  display: flex;
+}
+
+.gifts {
+  padding-top: 62px;
+  padding-right: 10vw;
+  padding-left: 10vw;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 90px;
+  padding-bottom: 69px;
+  position: relative;
+}
+
+.gifts__circle1 {
+  position: absolute;
+  top: 238px;
+  left: 0px;
+  width: 9vw;
+  object-fit: fill;
+}
+
+.gifts__circle2 {
+  position: absolute;
+  width: 21.4vw;
+  bottom: 409px;
+  right: 0px;
+  object-fit: fill;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block__circle {
+  width: 36px;
+  height: 35px;
+  background: #131313;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.block__heading {
+  color: black;
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: lowercase;
+}
+
+.block__text {
+  color: black;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32.04px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-decoration-line: underline;
+  text-transform: lowercase;
+}
+
+.block__number {
+  color: #3576c1;
+  font-family: "Plaster";
+  font-size: 61.23px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.15em;
+  text-align: right;
+  text-transform: lowercase;
+}
+
+.block__list {
+  list-style: none;
+}
+
+.block__list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #161444;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: lowercase;
+}
+
+.block__list-icon {
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 28px;
+  margin-right: 27px;
+}
+
+.block__text-first {
+  padding-top: 74px;
+  padding-right: 70px;
+}
+
+.block__circle-button {
+  border-radius: 8.24px;
+  background: rgba(84, 132, 195, 0.65);
+  padding: 24px 35.42px;
+  border: 0px solid;
+  color: white;
+  font-family: "Open Sans";
+  font-size: 21.98px;
+  font-weight: 600;
+  line-height: 7.56px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: lowercase;
+  margin-left: 54px;
+}
+
+.block__title {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.block__discounts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 64px;
+}
+
+.block__discount {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+}
+
+.block__text-number {
+  display: flex;
+  align-content: center;
+}
+
+.gifts__img-gifts {
+  width: 32.2vw;
+  object-fit: contain;
+}
+
+.block__img-merch {
+  width: 43vw;
+  object-fit: contain;
+}
+
+.block__circle-img-watermark {
+  width: 36.2vw;
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+.block__text-second {
+  padding-top: 33px;
+  padding-left: 97px;
+}
+
+.block__text-third {
+  align-self: center;
+  padding-right: 107px;
+}
+
+@media (max-width: 1280px) {
+  .block__heading {
+    line-height: 1.4em;
+    font-size: 2.7vw;
+    margin-bottom: 2vw;
+  }
+
+  .block__text-second {
+    padding-left: 6vw;
+  }
+
+  .block__list-item {
+    line-height: 1.3em;
+    font-size: 1.7vw;
+  }
+
+  .block__circle {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .block__list-icon {
+    width: 2.2vw;
+  }
+
+  .block__text-third {
+    padding-right: 30px;
+  }
+
+  .block__discounts {
+    padding-left: 20px;
+    gap: 1vw;
+  }
+
+  .block__number {
+    font-size: 6vw;
+  }
+
+  .block__title {
+    margin-bottom: 7px;
+  }
+
+  .block__circle-button {
+    padding: 2vw 3vw;
+    font-size: 2vw;
+    margin-left: 4vw;
+  }
+
+  .block__text {
+    font-size: 2vw;
+  }
+
+  .intro__image {
+    height: auto;
+    width: 100%;
+    margin-bottom: -4px;
+  }
+
+  .block__text-first {
+    padding-top: 3vw;
+    padding-right: 5vw;
+  }
+
+  .statistics__number-text {
+    font-size: 2.1vw;
+  }
+
+  /*.advantages__subheading 
+  * font-size: 1.3vw 
+  * line-height: 1.1em*/
+  .advantages__heading {
+    font-size: 1.5vw;
+    line-height: 1.3em;
+  }
+
+  .advantages__number {
+    font-size: 7vw;
+  }
+
+  .advantages__block {
+    column-gap: 1vw;
+    row-gap: 1vw;
+  }
+
+  .statistics__title {
+    font-size: 2.3vw;
+    line-height: 1.2em;
+  }
+
+  .statistics__text {
+    font-size: 1.7vw;
+    line-height: 1.2em;
+  }
+}
+@media (max-width: 1090px) {
+  .advantages-teachers__book {
+    top: 236px;
+    left: 20px;
+    width: 25.2vw;
+  }
+
+  .advantages-teachers__boy {
+    top: 500px;
+    right: 0px;
+    width: 50vw;
+  }
+
+  .advantages-teachers-blocks {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 50%;
+    gap: 1vw;
+    justify-content: center;
+  }
+
+  .advantages__block {
+    row-gap: 0px;
+  }
+
+  .advantages-teachers__title {
+    font-size: 3vw;
+    line-height: 1em;
+    margin-bottom: 0px;
+  }
+
+  .advantages__block {
+    display: grid;
+    margin-top: 2vw;
+  }
+
+  .teachers {
+    order: 3;
+  }
+
+  .intro__content {
+    padding-right: 0vw;
+  }
+
+  .statistics__info {
+    align-items: center;
+  }
+
+  .teachers__teacher-imgblock {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+@media (max-width: 760px) {
+  .intro__feature-text {
+    font-size: 2.29vw;
+    line-height: 1em;
+  }
+
+  .intro__icon {
+    width: 3.89vw;
+  }
+
+  .block1 {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .intro__title {
+    font-size: 24.4vw;
+    margin-top: 10.56vw;
+    margin-bottom: 2.29vw;
+  }
+
+  .intro__subtitle {
+    font-size: 4.58vw;
+    line-height: 4vw;
+    margin-bottom: 1.9vw;
+  }
+
+  .intro__feature {
+    padding: 1.9vw;
+    margin-right: 0px;
+  }
+
+  .intro {
+    column-gap: 0px;
+  }
+
+  .intro__features {
+    gap: 1.31vw;
+    margin-bottom: 2vw;
+  }
+
+  .intro {
+    grid-template-columns: auto 41vw;
+  }
+
+  .intro__rating-img {
+    width: 24.17vw;
+    margin-bottom: 0.1vw;
+  }
+
+  .intro__rating-text {
+    font-size: 2.03vw;
+  }
+
+  .statistics__number-text {
+    font-size: 2.798vw;
+  }
+
+  .statistics__number {
+    font-size: 10.94vw;
+  }
+
+  .statistics {
+    padding-top: 3.56vw;
+    padding-bottom: 4.37vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .statistics__numbers {
+    justify-content: center;
+    gap: 6vw;
+    margin-bottom: 3.56vw;
+  }
+
+  .intro__content {
+    gap: 5vw;
+  }
+
+  .advantages-teachers__book {
+    display: none;
+  }
+
+  .advantages-teachers__boy {
+    display: none;
+  }
+
+  .advantages-teachers-blocks {
+    grid-template-columns: 70%;
+  }
+
+  .advantages-teachers {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .advantages-teachers__title {
+    font-size: 4vw;
+  }
+
+  .advantages__number {
+    font-size: 11vw;
+  }
+
+  .advantages__heading {
+    font-size: 2.7vw;
+  }
+
+  .advantages__subheading {
+    font-size: 2.4vw;
+  }
+
+  .advantages__text {
+    font-size: 2.3vw;
+  }
+
+  .teachers__teacher-imgblock {
+    width: 53vw;
+    height: 53vw;
+  }
+
+  .teachers__teacher-text {
+    font-size: 2.3vw;
+  }
+
+  .gifts {
+    padding-top: 0px;
+    padding-right: 3vw;
+    padding-left: 3vw;
+  }
+
+  .block__heading {
+    line-height: 1.4em;
+    font-size: 3.7vw;
+  }
+
+  .block__list-icon {
+    width: 4.2vw;
+    margin-right: 11px;
+  }
+
+  .block__list-item {
+    line-height: 1.3em;
+    font-size: 2.9vw;
+  }
+
+  .block__text {
+    font-size: 3.3vw;
+  }
+
+  .block__circle-button {
+    padding: 3vw 4vw;
+    font-size: 3.5vw;
+    margin-left: 4vw;
+  }
+
+  .intro__feature {
+    border-radius: 2vw;
+  }
+
+  .intro__title {
+    font-size: 23.4vw;
+    margin-top: 10.56vw;
+    margin-bottom: 2.29vw;
+    margin-left: 0vw;
+  }
+}
+@media (max-width: 480px) {
+  .advantages__number {
+    font-size: 20vw;
+  }
+
+  .advantages-teachers-blocks {
+    grid-template-columns: 93vw;
+  }
+
+  .advantages__heading {
+    font-size: 4vw;
+  }
+
+  .advantages__subheading {
+    font-size: 4vw;
+    line-height: 1.3em;
+  }
+
+  .advantages__text {
+    font-size: 4vw;
+    line-height: 1.3em;
+  }
+
+  .advantages-teachers__title {
+    font-size: 6vw;
+    margin-bottom: 4vw;
+  }
+
+  .intro__rating-text {
+    font-size: 2.6vw;
+  }
+
+  .teachers__teacher-text {
+    font-size: 4vw;
+    line-height: 1.3em;
+  }
+
+  .statistics__info {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    gap: 1.88vw;
+  }
+
+  .statistics__info-block2 {
+    order: 2;
+  }
+
+  .statistics__info-block1 {
+    display: flex;
+    flex-direction: row;
+    gap: 5.85vw;
+  }
+
+  .img-room {
+    height: auto;
+    width: 88vw;
+  }
+
+  .statistics__title {
+    font-size: 3.56vw;
+  }
+
+  .statistics__text {
+    font-size: 2.798vw;
+    line-height: 1.2em;
+    margin-bottom: 3vw;
+  }
+
+  .img-home {
+    width: 41.98vw;
+  }
+
+  .statistics__numbers {
+    margin-bottom: 10.2vw;
+  }
+
+  .text-home, .title-home {
+    text-align: left;
+  }
+
+  .block__heading {
+    line-height: 1.4em;
+    font-size: 5vw;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.36vw;
+  }
+
+  .block__number {
+    font-size: 10.94vw;
+  }
+
+  .block__text {
+    font-size: 4.58vw;
+  }
+
+  .gifts__img-gifts {
+    width: 74.55vw;
+  }
+
+  .block__img-merch {
+    width: 72vw;
+    order: 2;
+  }
+
+  .gifts {
+    row-gap: 13.7vw;
+  }
+
+  .block__list-item {
+    line-height: 1.3em;
+    font-size: 4vw;
+  }
+
+  .block__list-icon {
+    width: 5.6vw;
+  }
+
+  .gifts__circle1 {
+    display: none;
+  }
+
+  .gifts__circle2 {
+    display: none;
+  }
+
+  .block__text-second {
+    padding: 0px;
+  }
+
+  .block__circle-button {
+    padding: 4.8vw 7.12vw;
+    font-size: 4.48vw;
+    margin-left: 4vw;
+  }
+
+  .block__text-third {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .block__circle-img-watermark {
+    width: 54.45vw;
+  }
+
+  .intro__title {
+    font-size: 22.4vw;
+  }
+}
+@media (min-width: 1600px) {
+  .intro__feature-text {
+    line-height: 1.2em;
+    font-size: 1.3vw;
+  }
+
+  .intro__rating-text {
+    font-size: 1.4vw;
+  }
+
+  .statistics__number-text {
+    font-size: 1.8vw;
+  }
+
+  .statistics__title {
+    font-size: 1.5vw;
+  }
+
+  .statistics__text {
+    line-height: 1.2em;
+    font-size: 1.2vw;
+  }
+
+  .advantages__number {
+    font-size: 5.5vw;
+  }
+
+  .advantages__heading {
+    font-size: 1.25vw;
+  }
+
+  .advantages__subheading {
+    line-height: 1em;
+    font-size: 1.1vw;
+  }
+
+  .advantages__text {
+    line-height: 1em;
+    font-size: 1.12vw;
+  }
+
+  .teachers__teacher-text {
+    font-size: 1.12vw;
+    line-height: 1em;
+  }
+
+  .advantages__block {
+    padding: 20px 30px 20px 30px;
+  }
+
+  .advantages-teachers__title {
+    font-size: 2vw;
+  }
+
+  .teachers__heading {
+    font-size: 1.1vw;
+  }
+
+  .teachers__teacher-name {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+  }
+
+  .teachers__block-nav {
+    padding: 20px 27px 10px 33px;
+  }
+
+  .teachers__dot {
+    width: 1vw;
+    height: 1vw;
+  }
+
+  .block__heading {
+    font-size: 2vw;
+  }
+
+  .block__list-item {
+    font-size: 1.5vw;
+    font-weight: 600;
+    line-height: 1.2em;
+  }
+
+  .block__text-second {
+    padding-left: 13vw;
+  }
+
+  .block__title {
+    margin-bottom: 2vw;
+  }
+}
+@media (min-width: 1441px) {
+  .advantages-teachers-blocks {
+    padding-bottom: 20vw;
+  }
+}

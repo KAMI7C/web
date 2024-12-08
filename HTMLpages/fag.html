@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/button-form.css">
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/faq.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="../images/logo.svg" alt="Логотип школы" class="header__logo-img">
+        </div>
+        <nav class="nav">
+            <button class="nav__close-button">
+                <img src="../images/close.png" alt="Закрыть" class="close-icon">
+            </button>
+            <ul class="nav__list nav__list-pages">
+                <li class="nav__item">
+                    <a href="../index.html" class="nav__link">о школе</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../HTMLpages/price.html" class="nav__link">цены</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../HTMLpages/sertificate.html" class="nav__link">сертификаты</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../HTMLpages/fag.html" class="nav__link">вопрос-ответ</a>
+                </li>
+            </ul>
+            <ul class="nav__list-social nav__list">
+                <li class="nav__item"><img src="../images/icons-Instagram.svg" class="icon-contact icon-instagram" alt="инстаграм"> <a href="https://instagram.com/pandaschool.by" class="nav__link">Instagram</a></li>
+                <li class="nav__item"><img src="../images/icons-Telegram.svg" class="icon-contact icon-telegram" alt="телеграмм"> <a href="https://t.me/kakaskina_lisina" class="nav__link">Telegram</a></li>
+                <li class="nav__item"><img src="../images/icons-youtube.svg" class="icon-contact icon-youtube" alt="ютуб"> <a href="http://www.youtube.com/@skyengschool" class="nav__link">YouTube</a></li>
+                <li class="nav__item"><img src="../images/icons-number.svg" class="icon-contact icon-phone" alt="номер телефона"> <a href="tel:+375000000000" class="nav__link">+375000000000</a></li>
+            </ul>
+        </nav>
+        <button class="openModal nav__button">оставить заявку</button>
+        <div class="burger-menu">
+            <img src="../images/Union-nav.svg" alt="фон" class="burger-menu__im">
+            <div class="burger-menu__line-first"></div>
+            <div class="burger-menu__line"></div>
+            <div class="burger-menu__line"></div>
+          </div>
+    </header>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal__content">
+            <span class="modal__close" id="closeModal">&times;</span>
+            <h2 class="modal__title">контактная информация</h2>
+            <input type="text" class="modal__text" id="name" placeholder="Введите ваше имя" required>
+            <input type="text" class="modal__text" id="phone" placeholder="Введите номер телефона" value="+375" maxlength="13" required>
+            <div class="modal__hint">Формат: +375XXXXXXXXX (9 цифр)</div>
+            <input type="email" class="modal__text" id="email" placeholder="Введите ваш email" required>
+            <textarea id="question" class="modal__text modal__text-area" placeholder="Задайте вопрос" rows="4"></textarea>
+            <button class="modal__submit" id="submitForm">Оставить заявку</button>
+        </div>
+    </div>
+
+
+<section class="block-header">
+    <img src="../images/question/questionimg.png" alt="картинка вопроса" class="block-header__big-img">
+    <div class="block-header__text-img">
+        <h3 class="block-header__text">ответы на часто задаваемые вопросы</h3>
+        <img src="../images/question/dots.svg" alt="картинка точек" class="dots">
+    </div>
+</section>
+
+<section class="faq">
+
+    <details class="faq__block">
+        <summary class="faq__title-block">
+            <span class="faq__question">
+                <h3 class="faq__title">Сколько стоит обучение?</h3>
+                <p class="faq__text faq__text-sub">Наши цены включают в себя все учебные материалы и доступ к дополнительным ресурсам, таким как онлайн-платформы и мультимедийные мфатериалы</p>
+            </span>
+            <img src="../images/question/arrow.svg" alt="Стрелка" class="faq__arrow" width="20" height="20">
+        </summary>
+        <div class="faq__content">
+            <p class="faq__text">Наши цены включают в себя все учебные материалы и доступ к дополнительным ресурсам, таким как онлайн-платформы и мультимедийные мфатериалы
+                Общий курс английского языка:
+                Уровень A1 (начальный): 150 белорусских рублей за месяц
+                Уровень A2-B1 (средний): 170 белорусских рублей за месяц
+                Уровень B2-C1 (продвинутый): 200 белорусских рублей за месяц
+                Подготовка к международным экзаменам (IELTS, TOEFL):
+                250 белорусских рублей за месяц</p>
+        </div>
+    </details>
+    
+    <details class="faq__block">
+        <summary class="faq__title-block">
+            <span class="faq__question">
+                <h3 class="faq__title">Как формируются групы?</h3>
+                <p class="faq__text faq__text-sub">Группы в нашей школе английского языка формируются с учетом уровня владения языком, возрастной категории и предпочтений студентов.</p>
+            </span>
+            <img src="../images/question/arrow.svg" alt="Стрелка" class="faq__arrow" width="20" height="20">
+        </summary>
+        <div class="faq__content">
+            <p class="faq__text">Группы в нашей школе английского языка формируются с учетом уровня владения языком, возрастной категории и предпочтений студентов. Все новые ученики проходят вступительное тестирование, которое помогает определить их текущий уровень и учебные цели. Мы организуем небольшие группы, обычно состоящие из 6-10 человек, что позволяет обеспечить индивидуальный подход и активное участие каждого студента. Такой подход гарантирует комфортные условия обучения и максимальную эффективность.</p>
+        </div>
+    </details>
+
+    <details class="faq__block">
+        <summary class="faq__title-block">
+            <span class="faq__question">
+                <h3 class="faq__title">Заболела, что делать?</h3>
+                <p class="faq__text faq__text-sub">Мы понимаем, что у наших студентов могут возникать непредвиденные обстоятельства, поэтому предлагаем возможность переноса занятий. </p>
+            </span>
+            <img src="../images/question/arrow.svg" alt="Стрелка" class="faq__arrow">
+        </summary>
+        <div class="faq__content">
+            <p class="faq__text">Мы понимаем, что у наших студентов могут возникать непредвиденные обстоятельства, поэтому предлагаем возможность переноса занятий. Чтобы перенести занятие, необходимо сообщить об этом администрации школы минимум за один день до назначенного времени. Это позволит нам внести изменения в расписание и избежать неудобств для других студентов и преподавателей. Мы всегда стремимся идти навстречу нашим ученикам и обеспечивать максимально комфортные условия для обучения.</p>
+        </div>
+    </details>
+</section>
+
+<section class="info-button">
+
+    <div class="info-button__text">
+        <h3 class="info-button__title">
+            не нашёлся отвеТ?
+        </h3>
+        <p class="info-button__smalltext">оставь заявку на консультацию и мы расскажем тебе подробнее</p>
+    </div>
+<button class="openModal toggleButton">оставить заявку</button>
+</section>
+
+   
+<footer class="footer">
+    <div class="footer__links">
+            <ul class="footer__list footer__list-info">
+                <li class="footer__list-item"><a href="../index.html">о школе</a></li>
+                <li class="footer__list-item"><a href="../HTMLpages/price.html">Цены</a></li>
+                <li class="footer__list-item"><a href="../HTMLpages/sertificate.html">Сертификаты</a></li>
+                <li class="footer__list-item"><a href="../HTMLpages/fag.html">Вопрос-ответ</a></li>
+            </ul>
+
+            <ul class="footer__list footer__list-social">
+                <li class="footer__list-item"><img src="../images/icons-Instagram.svg" class="icon-contact icon-instagram" alt="инстаграм"> <a href="https://instagram.com/pandaschool.by">Instagram</a></li>
+                <li class="footer__list-item"><img src="../images/icons-Telegram.svg" class="icon-contact icon-telegram" alt="телеграмм"> <a href="https://t.me/kakaskina_lisina">Telegram</a></li>
+                <li class="footer__list-item"><img src="../images/icons-youtube.svg" class="icon-contact icon-youtube" alt="ютуб"> <a href="http://www.youtube.com/@skyengschool">YouTube</a></li>
+                <li class="footer__list-item"><img src="../images/icons-number.svg" class="icon-contact icon-phone" alt="номер телефона"> <a href="tel:+375000000000">+375000000000</a></li>
+            </ul>
+    </div>
+        <div class="footer__logo">
+            <span class="footer__logo-text">Cloly.ru</span>
+            <img src="../images/logo.svg" alt="Логотип Cloly.ru" class="footer__logo-image">
+        </div>
+    
+</footer>
+
+<script src="../javascript/nav.js"></script>
+    <script src="../javascript/faq.js"></script>
+    <script src="../javascript/form.js"></script>
+</body>
+</html>

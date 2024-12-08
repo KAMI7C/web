@@ -1,0 +1,229 @@
+@font-face
+  font-family: "Open Sans"
+  font-weight: 300
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype")
+
+@font-face
+  font-family: "Open Sans"
+  font-weight: 600
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype")
+
+@font-face
+  font-family: "Plaster"
+  font-weight: normal
+  src: url("../fonts/Plaster-Regular.ttf") format("truetype")
+
+@font-face
+  font-family: "Pangolin"
+  font-weight: normal
+  src: url("../fonts/Pangolin-Regular.ttf") format("truetype")
+  font-display: swap
+
+@font-face
+  font-family: "Pirata One"
+  font-weight: normal
+  src: url("../fonts/PirataOne-Regular.ttf") format("truetype")
+  font-display: swap
+
+* 
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+    
+body
+    background-image: url('../images/bg-header.svg')
+    background-size: contain
+    background-position: top
+    background-repeat: no-repeat
+
+.sertificate-header__big-letters
+  color: rgb(255, 255, 255)
+  font-family: Pirata One
+  font-size: 148px
+  font-weight: 400
+  line-height: 193.98px
+  letter-spacing: 0.02em
+  text-align: right
+  text-transform: uppercase
+  white-space: nowrap
+
+.sertificate-header__header
+  color: rgb(255, 255, 255)
+  font-family: Open Sans
+  font-size: 40px
+  font-weight: 600
+  line-height: 40px
+  letter-spacing: 0.02em
+  text-align: left
+  text-transform: lowercase
+
+.sertificate__text
+  color:#F5F0F0
+  font-family: Open Sans
+  font-size: 17px
+  font-weight: 600
+  line-height: 23px
+  letter-spacing: 0.02em
+  text-align: left
+
+.sertificate-header
+  display: flex
+  justify-content: space-between
+  padding-right:15.02vw
+  padding-left:15.02vw
+  gap:99px
+  padding-top: 68px
+  align-items: center
+
+.sertificate__message
+  border-radius: 58.02px 58.02px 0px 58.02px
+  background: rgb(217, 217, 217)
+  box-shadow: 0px 0px 35.08px 0px rgba(0,0 ,0 ,0.2)
+  background: rgb(48, 77, 109)
+  width: 337.17px
+  padding: 17px 8.27px 23.89px 30.24px
+  position: relative
+
+.sertificate
+  display: flex
+  justify-content: space-between
+  padding-left: 10.95vw
+  padding-right: 27vw
+  padding-bottom: 5px
+
+.sertificate__bunny
+    position: absolute
+    top: 182px
+    right: 49px
+    width: 38.5vw
+    object-fit: fill
+
+.sertificate__bunny-message
+  padding-top: 4px
+
+.sertificate__img
+  width: 36.94vw
+
+@media (min-width: 1600px)
+  .sertificate__text 
+    line-height: 1.3em
+    font-size: 1.2vw
+
+  .sertificate__message
+    width: 24vw
+
+
+@media (max-width: 1390px)
+  .sertificate
+    padding-right: 19vw
+    padding-left: 8.95vw
+
+  .sertificate__bunny
+    top: 255px
+    right: 0px
+
+  .sertificate-header
+    gap: 6vw
+    padding-top: 5vw
+
+  .sertificate-header__big-letters 
+    font-size: 11vw
+
+  .sertificate-header__header
+    font-size: 3vw
+    line-height: 1.05em
+
+  .sertificate__text 
+    font-size: 1.5vw
+    line-height: 1.3em
+
+  .sertificate__message 
+    width: 29vw
+    padding: 2vw
+    border-radius: 3vw
+
+  .sertificate__img
+    width: 40vw
+
+
+@media (max-width: 760px)
+  .sertificate
+    padding-right: 19vw
+    padding-left: 8.95vw
+
+  .sertificate__bunny
+      top: 255px
+      right: 0px
+
+  .sertificate-header
+      gap: 6vw
+      padding-top: 5vw
+
+  .sertificate-header__big-letters 
+    font-size: 11vw
+
+  .sertificate-header__header
+    font-size: 3vw
+    line-height: 1.05em
+
+  .sertificate__text 
+    font-size: 1.5vw
+    line-height: 1.3em
+
+  .sertificate__message 
+    width: 29vw
+    padding: 2vw
+    border-radius: 3vw
+
+  .sertificate__img
+    width: 40vw
+
+  .sertificate-header
+    gap: 6vw
+    padding-top: 1vw
+
+@media (max-width: 640px)
+  .sertificate
+    display: flex
+    flex-direction: column
+    gap: 17vw
+    padding-left: 7.4vw
+    padding-right: 7.4vw
+
+  .sertificate-header__header
+    font-size: 4.09vw
+    order: 1
+    line-height: 1.15em
+
+  .sertificate-header
+    gap: 6vw
+    padding-top: 12vw
+    padding-left: 7.4vw
+    padding-right: 7.4vw
+    padding-bottom: 3vw
+
+  body 
+    background-image: url(../images/bg-header-mobail.svg)
+
+  .sertificate-header__big-letters
+    font-size: 17.08vw
+    order: 2
+    line-height: normal
+
+  .sertificate__img
+    width: 85.51vw
+    order: 2
+
+  .sertificate__text
+    font-size: 2.54vw
+    line-height: 1.3em
+
+  .sertificate__message
+    width: 47.9vw
+    padding: 2vw
+    border-radius: 3vw 3vw 0vw  3vw 
+
+  .sertificate__bunny 
+    top: 34vw
+    right: 6vw
+    width: 60.3vw

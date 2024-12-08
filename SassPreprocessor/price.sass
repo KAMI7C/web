@@ -1,0 +1,383 @@
+
+@font-face
+  font-family: "Open Sans"
+  font-weight: 300
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype")
+
+@font-face
+  font-family: "Open Sans"
+  font-weight: 600
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype")
+
+@font-face
+  font-family: "Plaster"
+  font-weight: normal
+  src: url("../fonts/Plaster-Regular.ttf") format("truetype")
+
+@font-face
+  font-family: "Pangolin"
+  font-weight: normal
+  src: url("../fonts/Pangolin-Regular.ttf") format("truetype")
+  font-display: swap
+
+@font-face
+  font-family: "Pirata One"
+  font-weight: normal
+  src: url("../fonts/PirataOne-Regular.ttf") format("truetype")
+  font-display: swap
+
+* 
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+
+body
+    background-image: url('../images/bg-header.svg')
+    background-size: contain
+    background-position: top
+    background-repeat: no-repeat
+
+
+.price-header
+    color: rgb(255, 255, 255)
+    font-family: Open Sans
+    font-size: 36px
+    font-weight: 600
+    line-height: 1.133em
+    letter-spacing: 0.02em
+    text-align: center
+    text-transform: lowercase
+    padding-top: 85px
+
+
+.prices
+    display: flex
+    align-content: center
+    justify-content: center
+    gap:2.708vw
+    padding-top: 42px
+    padding-bottom: 82px
+
+.prices-block
+    border-radius: 29.51px
+    box-shadow: 3.27px 5.35px 6.54px 0px rgba(0, 0, 0, 0.42)
+    background: rgb(128, 175, 241)
+    width: 297px
+    padding: 11px 8px 11px 8px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    gap: 24px
+
+
+.prices-block__bg-img
+    background-size: cover
+    background-position: top
+    background-repeat: no-repeat
+    width: 279px
+    height: 201.12px
+    border-radius: 32px
+    position: relative
+    overflow: hidden
+    margin-bottom: 16px
+
+.prices-block__bg-img_first
+    background-image: url('../images/prices/imgcourse1.png')
+
+.prices-block__bg-img_second
+    background-image: url('../images/prices/imgcourse2.png')
+
+.prices-block__bg-img_third
+    background-image: url('../images/prices/imgcourse3.png')
+
+.prices-block__price
+    border-radius: 40px 10px 10px 10px
+    backdrop-filter: blur(4px)
+    background: rgba(5, 17, 93, 0.55)
+    width: 84px
+    height: 65px
+    position: absolute
+    right: -3px
+    bottom: 0px
+    padding: 21px 16px 10px 10px
+
+.prices-block__price-text
+    color: rgb(255, 255, 255)
+    font-family: Open Sans
+    font-size: 13px
+    font-weight: 700
+    line-height: 15.31px
+    letter-spacing: 0.02em
+    text-align: right
+    text-transform: uppercase
+
+.prices-block__main-header
+    color: rgb(255, 255, 255)
+    font-family: Open Sans
+    font-size: 16px
+    font-weight: 600
+    line-height: 1.3em
+    letter-spacing: 0.02em
+    text-align: left
+    text-transform: uppercase
+    padding-bottom: 5px
+
+.prices-block__main-header_small
+    font-size: 14px
+    margin-top: 7.2px
+    margin-left: 3px
+    padding-bottom: 8px
+
+.prices-block__main-article
+    color: rgb(0, 0, 0)
+    font-family: Open Sans
+    font-size: 13px
+    font-weight: 600
+    line-height: 1.2em
+    letter-spacing: 0.02em
+    text-align: left
+    text-transform: lowercase
+
+.prices-block__main-ul
+    list-style: none
+
+.prices-block__text
+    padding-left: 11px
+    padding-right: 12px
+
+.toggleButton
+    box-sizing: border-box
+    border: 0px
+    border-radius: 14.64px
+    background: rgba(5, 17, 93, 0.38)
+    align-items: center
+    padding: 11px 22px
+    text-transform: lowercase
+    color: rgb(255, 255, 255)
+    font-family: Open Sans
+    font-size: 16px
+    font-weight: 600
+    line-height: 16.47px
+    letter-spacing: 0%
+
+.toggleButton:hover
+     background: rgba(5, 17, 93, 0.444)
+     cursor: pointer
+
+.toggleButton:active
+     background: rgba(5, 17, 93, 0.582)
+     cursor: pointer
+/*исправить выравнивание кнопки выше*/
+
+.video__text
+    flex-basis: 430px
+
+.video__header
+    color: rgb(0, 0, 0)
+    font-family: Open Sans
+    font-size: 32px
+    font-weight: 600
+    line-height: 35px
+    letter-spacing: 0.02em
+    text-align: left
+    text-transform: lowercase
+    margin-bottom: 25px
+
+.video
+    display: flex
+    justify-content: center
+    align-items: center
+    gap:31px
+    align-items: center
+    padding-bottom: 48px
+
+
+.video__video
+    width: 512px
+    height: 405.87px
+
+
+video
+    width: 100%
+    object-fit: cover
+    height: auto
+    border-radius: 16px
+    height: 405.87px
+
+
+.video__button
+    border-radius: 8.24px
+    background: rgba(84, 132, 195, 0.65)
+    padding: 24px 35.42px
+    border:  0px solid
+    color: rgb(255, 255, 255)
+    font-family: "Open Sans"
+    font-size: 21.98px
+    font-weight: 600
+    line-height: 7.56px
+    letter-spacing: 0em
+    text-align: left
+    text-transform: lowercase
+
+.video__button:hover
+    background: rgba(5, 17, 93, 0.444)
+
+.video__button:active
+    background: rgba(5, 17, 93, 0.582)
+
+
+@media (min-width: 1600px)
+    .price-header
+        font-size: 2.25vw
+        padding-top: 7vw
+
+    .prices-block
+        width: 21vw
+        gap: 1vw
+
+    .prices-block__price-text
+        font-size: 0.7vw
+        line-height: 1.1em
+
+    .prices-block__price 
+        width: 5vw
+        height: 3.5vw
+        padding: 1vw
+
+    .prices-block__bg-img 
+        width: 100%
+        height: 15vw
+
+    .prices-block__main-header
+        font-size: 1.1vw
+
+    .prices-block__main-article
+        font-size: 1vw
+
+
+    .toggleButton
+        font-size: 1.2vw
+        padding: 0.8vw 1vw
+
+    .video__header 
+        font-size: 2vw
+        line-height: 1.2em
+
+    .video__text
+        flex-basis: 31vw
+
+    .video__button
+        padding: 1.5vw 2vw
+
+
+@media (max-width: 1020px) and (min-width: 621px)
+    .price-header
+        font-size: 3vw
+        padding-top: 15vw
+
+    .prices-block
+        width: 29vw
+        gap: 1vw
+        padding: 0.7vw
+
+    .prices-block__price-text
+        font-size: 1.1vw
+        line-height: 1.1em
+
+    .prices-block__price 
+        width: 7vw
+        height: 6vw
+        padding: 1vw 1.2vw 1vw 1vw
+        display: flex
+        align-items: center
+
+    .prices-block__bg-img 
+        width: 100%
+        height: 20vw
+
+    .prices-block__main-header
+        font-size: 1.5vw
+
+    .prices-block__main-article
+        font-size: 1.25vw
+
+
+    .toggleButton
+        font-size: 1.7vw
+        padding: 0.8vw 1.5vw
+
+    .video__header 
+        font-size: 2.7vw
+        line-height: 1.2em
+
+    .video__text
+        flex-basis: 31vw
+
+    .video__button
+        padding: 2vw 2vw
+        font-size: 2.2vw
+
+    .video
+        height: auto
+
+    video
+        height: 40vw
+
+    .video__video 
+        width: 46vw
+        height: 42vw
+
+    .prices-block__bg-img
+        margin-bottom: 1vw
+
+@media (max-width: 620px)
+    .prices
+        justify-content: flex-start
+        gap: 2.708vw
+        width: 100%
+        padding-right: 3vw
+        padding-left: 3vw
+        overflow-x: scroll
+        padding-top: 6.87vw
+        padding-bottom: 4vw
+
+    .price-header 
+        font-size: 6.7vw
+        line-height: 1em
+        padding-top: 16vw
+
+    body 
+        background-image: url(../images/bg-header-mobail.svg)
+
+    .video 
+        gap: 7.9vw
+        align-items: center
+        padding-bottom: 0px
+        flex-direction: column
+        padding-top: 8vw
+        padding-right: 3vw
+        padding-left: 3vw
+
+    .video__text
+        flex-basis: auto
+        text-align: center
+        
+    .video__header 
+        text-align: center
+        font-size: 6.1vw
+        line-height: 1em
+        margin-bottom: 0vw
+
+    .video__button
+        display: none
+
+    video
+        width: 100%
+        height: auto
+        height: 78.9vw
+
+    .video__video 
+        height: auto
+        width: 83.5vw

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/preproc-styles-main.css">
+    <link rel="stylesheet" href="./styles/header-footer.css">
+    <link rel="stylesheet" href="./styles/button-form.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="block1">
+    <header class="header">
+        <div class="logo">
+            <img src="./images/logo.svg" alt="Логотип школы" class="header__logo-img">
+        </div>
+        <nav class="nav">
+            <button class="nav__close-button">
+                <img src="./images/close.png" alt="Закрыть" class="close-icon">
+            </button>
+            <ul class="nav__list nav__list-pages">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">о школе</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./HTMLpages/price.html" class="nav__link">цены</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./HTMLpages/sertificate.html" class="nav__link">сертификаты</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./HTMLpages/fag.html" class="nav__link">вопрос-ответ</a>
+                </li>
+            </ul>
+            <ul class="nav__list-social nav__list">
+                <li class="nav__item"><img src="./images/icons-Instagram.svg" class="icon-contact icon-instagram" alt="инстаграм"> <a href="https://instagram.com/pandaschool.by" class="nav__link">Instagram</a></li>
+                <li class="nav__item"><img src="./images/icons-Telegram.svg" class="icon-contact icon-telegram" alt="телеграмм"> <a href="https://t.me/kakaskina_lisina" class="nav__link">Telegram</a></li>
+                <li class="nav__item"><img src="./images/icons-youtube.svg" class="icon-contact icon-youtube" alt="ютуб"> <a href="http://www.youtube.com/@skyengschool" class="nav__link">YouTube</a></li>
+                <li class="nav__item"><img src="./images/icons-number.svg" class="icon-contact icon-phone" alt="номер телефона"> <a href="tel:+375000000000" class="nav__link">+375000000000</a></li>
+            </ul>
+        </nav>
+        <button class="openModal nav__button">оставить заявку</button>
+        <div class="burger-menu">
+            <img src="./images/Union-nav.svg" alt="фон" class="burger-menu__im">
+            <div class="burger-menu__line-first"></div>
+            <div class="burger-menu__line"></div>
+            <div class="burger-menu__line"></div>
+          </div>
+    </header>
+
+
+    
+    <div id="myModal" class="modal">
+        <div class="modal__content">
+            <span class="modal__close" id="closeModal">&times;</span>
+            <h2 class="modal__title">контактная информация</h2>
+            <input type="text" class="modal__text" id="name" placeholder="Введите ваше имя" required>
+            <input type="text" class="modal__text" id="phone" placeholder="Введите номер телефона" value="+375" maxlength="13" required>
+            <div class="modal__hint">Формат: +375XXXXXXXXX (9 цифр)</div>
+            <input type="email" class="modal__text" id="email" placeholder="Введите ваш email" required>
+            <textarea id="question" class="modal__text modal__text-area" placeholder="Задайте вопрос" rows="4"></textarea>
+            <button class="modal__submit" id="submitForm">Оставить заявку</button>
+        </div>
+    </div>
+
+    <section class="intro">
+            <h1 class="intro__title">CLOLY</h1>
+            <div class="intro__content">
+            <h2 class="intro__subtitle">Школа английского языка с проверенной методикой</h2>
+            <div class="intro__features">
+                 <div class="intro__feature">
+                    <img src="./images/mainpage/icon-clipboard.svg" alt="Результаты" class="intro__icon">
+                    <p class="intro__feature-text">Результаты уже через 3 месяца</p>
+                </div>
+                <div class="intro__feature"> 
+                    <p class="intro__feature-text">Прокачай свой уровень</p>
+                </div>
+            </div>
+            <div class="intro__rating">
+                <img src="./images/mainpage/stars.svg" alt="Рейтинг" class="intro__rating-img">
+                <p class="intro__rating-text">4.9 в Яндексе</p>
+            </div>
+        </div>
+        <div class="intro__image">
+            <img src="./images/mainpage/main-people.png" alt="мальчик" class="intro__bg-image">
+        </div>
+    </section>
+</div>
+
+    <section class="statistics">
+        <div class="statistics__numbers">
+            <div class="statistics__block">
+                <p class="statistics__number">20</p>
+                <p class="statistics__number-text">лет опыта <br>преподавания</p>
+            </div>
+            <div class="statistics__block">
+                <p class="statistics__number">05</p>
+                <p class="statistics__number-text">носителей языка</p>
+            </div>
+            <div class="statistics__block">
+                <p class="statistics__number">22</p>
+                <p class="statistics__number-text">учреждения</p>
+            </div>
+        </div>
+        <div class="statistics__info">
+            <div class="statistics__info-block statistics__info-block2">
+                <div class="statistics__info-text">
+                <h3 class="statistics__title title-room">Комфортабельное помещение</h3>
+                <p class="statistics__text text-room">Делаем все для вашего уюта. В наших классах не холодно зимой и не жарко летом. Удобные стулья и евро ремонт.</p>
+            </div>
+                    <img src="./images/mainpage/officeInside.jpg" alt="помещение внутри" class="statistics__image-bg img-room">
+                
+        </div>
+            <div class="statistics__info-block statistics__info-block1">
+
+                <img src="./images/mainpage/home.png" alt="Удобное расположение" class="statistics__image-bg img-home">
+                <div class="statistics__info-text">
+                <h3 class="statistics__title title-home">Удобное расположение</h3>
+                <p class="statistics__text text-home">Наша школа находится около ст. Метро Немига. Рядом есть бесплатный паркинг и куча кафетериев, чтобы нашим ученикам было всегда комфортно.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages-teachers">
+        <h2 class="advantages-teachers__title">Почему стоит выбрать нашу школу</h2>
+
+    <div class="advantages-teachers-blocks">
+            <div class="advantages__block advantages__block1 ">
+                <h3 class="advantages__number">01</h3>
+                <div class="advantages__heading-and-subheading">
+                <h4 class="advantages__heading">Уникальная методика</h4>
+                <h5 class="advantages__subheading">Integrated Language Immersion Method</h5>
+            </div>
+                <p class="advantages__text">
+                    Позволяет студентам максимально быстро и эффективно освоить язык, сочетая в себе элементы коммуникативного подхода, интерактивного обучения и использования мультимедийных ресурсов.
+                </p>
+            </div>
+
+    <div class="teachers">
+        <h3 class="teachers__heading">Опытные педагоги</h3>
+        <div class="teachers__block-nav">
+            <div class="teachers__block">
+                <div class="teachers__teacher active">
+                    <h4 class="teachers__teacher-name">Irina</h4>
+                    <p class="teachers__teacher-text">“Меня зовут Ирина Кравцева. У меня есть многолетний опыт преподавания английского языка, я всегда стремлюсь сделать уроки увлекательными и эффективными. Мои студенты отмечают, что я умею объяснять темы простым языком.”</p>
+                    <div class="teachers__teacher-imgblock">
+                        <img src="./images/mainpage/teacherIrina.png" alt="Преподаватель Ирина" class="teachers__teacher-image">
+                    </div>
+                </div>
+                <div class="teachers__teacher">
+                    <h4 class="teachers__teacher-name">Inna</h4>
+                    <p class="teachers__teacher-text">“Я работаю преподавателем уже 10 лет, а в этой школе с 2018 года. За это время я приобрела ценный опыт работы как с детьми, так и со взрослыми. Моя цель - помочь каждому ученику достичь своих целей в изучении английского языка, используя индивидуальный подход.”</p>
+                    <div class="teachers__teacher-imgblock teachers__teacher-imgblock_second">
+                        <img src="./images/mainpage/teacherInna.png" alt="Преподаватель Инна" class="teachers__teacher-image">
+                    </div>
+                </div>
+                <div class="teachers__teacher">
+                    <h4 class="teachers__teacher-name">Tana</h4>
+                    <p class="teachers__teacher-text">“Как преподаватель я использую методику запоминания через ассоциации, работаю в этой школе с 2020 года. За это время я накопила богатый опыт работы с учениками разных возрастов. Моя миссия - помочь каждому овладеть английским.”</p>
+                    <div class="teachers__teacher-imgblock teachers__teacher-imgblock_third">
+                        <img src="./images/mainpage/teacherTana.png" alt="Преподаватель Таня" class="teachers__teacher-image">
+                    </div>
+                </div>
+            </div>
+            <div class="teachers__dots">
+                <span class="teachers__dot"></span>
+                <span class="teachers__dot active"></span>
+                <span class="teachers__dot"></span>
+            </div>
+        </div>
+    </div>
+    
+
+                <div class="advantages__block advantages__block2">
+                    <h3 class="advantages__number">02</h3>
+                <div class="advantages__heading-and-subheading">
+                    <h4 class="advantages__heading">Непрерывное развитие</h4>
+                    <h5 class="advantages__subheading">просмотр конкурентов</h5>
+                </div>
+                <p class="advantages__text">
+                    Мы регулярно проводим опросы среди студентов и преподавателей, собираем обратную связь и внимательно изучаем её, чтобы улучшать качество наших услуг и делать обучение ещё более комфортным и результативным.
+                </p>
+                </div>
+    </div>
+    <img src="./images/mainpage/book.png" alt="стопка книг" class="advantages-teachers__book">
+            <img src="./images/mainpage/boy.png" alt="мальчик" class="advantages-teachers__boy">
+    </section>
+
+    <section class="gifts">
+<img src="./images/mainpage/circle1.svg" alt="картинка круга" class="gifts__circle1">
+<img src="./images/mainpage/circle2.svg" alt="картинка круга" class="gifts__circle2">
+        <div class="block">
+            <div class="block__text-first">
+                <div class="block__title">
+                    <div class="block__circle"></div>
+                     <h3 class="block__heading">У нас действует система скидок для студентов на очной форме обучения и многодетных семей</h3>
+                </div>
+                <div class="block__discounts">
+                    <div class="block__discount"><p class="block__number">20%</p><p class="block__text">многодетные</p></div>
+                    <div class="block__discount"><p class="block__number">25%</p><p class="block__text">студенты</p></div>
+                </div>
+            </div>
+            <img src="./images/mainpage/gifts.png" alt="Скидки" class="gifts__img-gifts">
+        </div>
+    
+    
+
+        <div class="block">
+            <img src="./images/mainpage/merch.png" alt="Мерч школы" class="block__img-merch">
+            <div class="block__text-second">
+                    <div class="block__title">
+                        <div class="block__circle"></div>
+                        <h3 class="block__heading">В нашей школе есть система бонусов и призы за активность</h3>
+                    </div>
+                <ul class="block__list">
+                    <li class="block__list-item"><img src="./images/mainpage/ul-checkpoint.svg" alt="иконка списка" class="block__list-icon">ПОЛУЧАЙТЕ ПРИЗЫ И СКИДКИ ЗА УСПЕХИ В УЧЁБЕ</li>
+                    <li class="block__list-item"><img src="./images/mainpage/ul-checkpoint.svg" alt="иконка списка" class="block__list-icon">ВЫ БУДЕТЕ РЕГУЛЯРНО УЧАВСТВОВАТЬ В РАЗВЛЕКАТЕЛЬНЫХ ПРОГРАММАХ, ЧТОБЫ НЕ ЗАСКУЧАТЬ</li>
+                    <li class="block__list-item"><img src="./images/mainpage/ul-checkpoint.svg" alt="иконка списка" class="block__list-icon">У ВАС БУДЕТ ВОЗМОЖНОСТЬ ПОЛУЧИТЬ СТИЛЬНЫЕ БРЕНДИРОВАННЫЕ ВЕЩИ ОТ ШКОЛЫ</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="block">
+            <div class="block__text-third">
+                <div class="block__title">
+                    <div class="block__circle"></div>
+                <h3 class="block__heading">Приведи друга и первые 5 занятий будут бесплатные</h3>
+                </div>
+                <button class="block__circle-button openModal">Оставить заявку</button>
+            </div>
+            <img src="./images/watermark.svg" alt="Водяной знак" class="block__circle-img-watermark">
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__links">
+                <ul class="footer__list footer__list-info">
+                    <li class="footer__list-item"><a href="index.html">о школе</a></li>
+                    <li class="footer__list-item"><a href="./HTMLpages/price.html">Цены</a></li>
+                    <li class="footer__list-item"><a href="./HTMLpages/sertificate.html">Сертификаты</a></li>
+                    <li class="footer__list-item"><a href="./HTMLpages/fag.html">Вопрос-ответ</a></li>
+                </ul>
+
+                <ul class="footer__list footer__list-social">
+                    <li class="footer__list-item"><img src="./images/icons-Instagram.svg" class="icon-contact icon-instagram" alt="инстаграм"> <a href="https://instagram.com/pandaschool.by">Instagram</a></li>
+                    <li class="footer__list-item"><img src="./images/icons-Telegram.svg" class="icon-contact icon-telegram" alt="телеграмм"> <a href="https://t.me/kakaskina_lisina">Telegram</a></li>
+                    <li class="footer__list-item"><img src="./images/icons-youtube.svg" class="icon-contact icon-youtube" alt="ютуб"> <a href="http://www.youtube.com/@skyengschool">YouTube</a></li>
+                    <li class="footer__list-item"><img src="./images/icons-number.svg" class="icon-contact icon-phone" alt="номер телефона"> <a href="./HTMLpages/error.html">Error</a></li>
+                </ul>
+        </div>
+            <div class="footer__logo">
+                <span class="footer__logo-text">Cloly.ru</span>
+                <img src="./images/logo.svg" alt="Логотип Cloly.ru" class="footer__logo-image">
+            </div>
+        
+    </footer>
+    <script src="./javascript/nav.js"></script>
+    <script src="./javascript/slider.js"></script>
+    <script src="./javascript/form.js"></script>
+</body>
+</html>

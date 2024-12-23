@@ -118,6 +118,7 @@ details[open] .faq__content {
   line-height: 1.1em;
   letter-spacing: 0.02em;
   text-align: left;
+  margin-right: 2vw;
 }
 
 .faq__text-sub {
